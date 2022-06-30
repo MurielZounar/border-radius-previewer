@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B. Radius Previewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Border Radius Previewer</h1>
+      <div id="preview"></div>
+      <div id="data">
+        <div id="message" class="hide">
+          <p>Text copied to clipboard</p>
+        </div>
+        <form id="form">
+          <label for="form">
+            Top Left
+            <input
+              type="number"
+              class="pos top-left"
+              value="0"
+              onkeyup="getText()"
+            />
+          </label>
+          <label for="form">
+            Top Right
+            <input
+              type="number"
+              class="pos top-right"
+              value="0"
+              onkeyup="getText()"
+            />
+          </label>
+          <label for="form">
+            Bottom Right
+            <input
+              type="number"
+              class="pos bottom-right"
+              value="0"
+              onkeyup="getText()"
+            />
+          </label>
+          <label for="form">
+            Bottom Left
+            <input
+              type="number"
+              class="pos bottom-left"
+              value="0"
+              onkeyup="getText()"
+            />
+          </label>
+        </form>
+      </div>
+      <div id="css-code">
+        <label id="style-code" for="form">
+          <input type="text" class="code" disabled />
+          <button id="copy" onclick="textCopy()">
+            <img id="copy-img" src="assets/copy_icon.svg" alt="" />
+          </button>
+        </label>
+      </div>
+      <div id="credits">
+        <p class="dev">Developed by Muriel Zounar</p>
+        <a id="ghub" href="https://github.com/MurielZounar" target="_blank">
+          <img src="assets/github_icon.svg" alt="GitHub Logo"
+        /></a>
+        <a
+          id="linkedin"
+          href="https://www.linkedin.com/in/murielzounar/"
+          target="_blank"
+        >
+          <img src="assets/linkedin_icon.svg" alt="LinkedIn Logo"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
